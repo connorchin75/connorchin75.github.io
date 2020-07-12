@@ -1,0 +1,12 @@
+
+How to push changes in the HTML/CSS to GitHub:
+
+	1.Open up the terminal
+	2.Navigate to the Website folder >>cd <<(after typing "cd " drag the folder into 	the terminal.
+	4.Initialize git hub commands>>git init<<
+	3.Add the changes >>git add .<<(note the period is important)
+	4.Commit the changes >>git commit -m"comments about the change"<<
+	5.Push the changes to master branch >>git push origin master<<
+
+
+- If you want to change the name of a file, go through the git hub website and change the file name there. Then open the terminal, navigate to the project folder and initialize git commands (see above). Use >>git pull<< and this will sync up the new name to the folder.
