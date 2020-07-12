@@ -1,6 +1,9 @@
 h1 {
   text-align: center;
   color: #037bfc;
+  font-family: oswald, helvetica, arial, sans-serif;
+  font-size: 36pt;
+  text-decoration: underline;
 }
 
 h3 {
