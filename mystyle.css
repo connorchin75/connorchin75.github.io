@@ -1,9 +1,10 @@
 h1 {
   text-align: center;
-  color: #037bfc;
-  font-family: oswald, helvetica, arial, sans-serif;
+  color: #ffffff;
+  font-family: 'helvetica', arial, sans-serif;
   font-size: 32pt;
-  text-decoration: underline;
+  padding-top: 350px;
+  
 }
 
 .topnav{
@@ -12,8 +13,6 @@ h1 {
     position: fixed; 
     top: 0; 
     width: 100%; 
-    
-    
 }
 
 .topnav a{
@@ -25,12 +24,26 @@ h1 {
     padding-right:10px;
     font-size:16px;
     text-decoration:none;
-    
 }
 
 .topnav a:hover {
   background-color: #ffffff;
   color: blue;
+}
+
+.container{
+    max-width:960px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    font-size:24px;
+    padding: 25px;
+}
+
+.parallax{
+    background: url("edmonton2.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 600px;
 }
 
 
@@ -39,16 +52,6 @@ h1 {
 h3 {
   text-align: center;
   
-}
-
-p {
-    padding: 100px 50px;
-    margin: 100px;
-    border-style: solid;
-    border-color: blue;
-    border-width: 5px;
-    
-
 }
 
 table{
