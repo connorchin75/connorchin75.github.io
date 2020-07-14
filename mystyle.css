@@ -11,3 +11,13 @@ h3 {
   
 }
 
+p {
+    padding: 100px 50px;
+    margin: 100px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    
+
+}
+
