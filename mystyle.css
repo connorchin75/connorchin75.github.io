@@ -49,6 +49,7 @@ h1 {
 #title{
     z-index: 2;
     position:relative;
+    bottom: 125px;
 
 }
 
