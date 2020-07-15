@@ -3,14 +3,22 @@ h1 {
   color: #ffffff;
   font-family: 'Merriweather', serif;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 55px;
   padding-top: 350px;
   
-  
+}
+
+
+h2 {
+    margin: 20px 30px;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size:40px;
 }
 
 p {
     font-family: 'Lato', sans-serif;
+    font-size:20px; 
 }
 .topnav{
     z-index:3;
@@ -61,6 +69,18 @@ p {
 h3 {
   text-align: center;
   
+}
+
+ #about {
+    padding-top:80px;
+    margin-top:-80px;
+}
+
+ #aboutme p{
+    text-align:left;
+    width: 750px;
+    padding: 5px 60px;
+    
 }
 
 table{
