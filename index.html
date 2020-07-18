@@ -51,7 +51,7 @@ Hello! My name is Connor Chin and I am an Electrical Engineering student at the 
 
 <div id="projectSection">
 <h2 id="projects">Projects</h2>
-	<h3>Arduino Distance Measurer</h3>
+	<h3>Arduino Distance Measurer -- 06/2020</h3>
 	<video width="60%" height="35%" controls>
 	<source src="distanceSensor.mp4" type="video/mp4">
 	</video>
@@ -69,13 +69,95 @@ Hello! My name is Connor Chin and I am an Electrical Engineering student at the 
 	
 	<h3>Description</h3>
 	<p>
-	During the summer I had a lot of time on my hands so I thought it would be a fun idea to pick up an arduino set to play with. The distance sensor was a basic project that I worked on in order to build up some of the fudemental skills that would be needed for more challenging projects. In this build I used a 9 volt battery supply.
-	
-	
+	This summer I decided to pick up an arduino kit with various components so that I could learn some basics about how microcontrollers can be applied to various scenarios. The distance measurer was a simple project that allowed me to test out some of the skills I had learned through various tutorials. 
+	</p>
+	<p>
+	Upon pressing a button, the HC-SR04 sensor sends out an ultrasonic signal that reflects off of a solid object. The echo-pin on the sensor is set to high until the signal returns at which point the pin switches to low and the arduino is able to record the signal travel time. By using basic a basic velocity calculation (assuming that the signal travels at the speed of sound), I am able to produce an accurate measure of the distance between the object and the sensor.
 	</p>
 	
+	<p>
+	In order to make the assembly portable I connected up a power module that allowed me to use an input voltage supply of 9V and output a voltage of 5V that could be used by the arduino. I also used an LCD screen to display basic user instructions as well as the results of the measurements in inches. The wires were a bit messier than i would have liked but overall this project was a good starting point.
+	</p>
 	
+	<h3>Code</h3>
+	<pre><code>
 	
+#include &ltLiquidCrystal.h&gt
+
+int rs=10;
+int en=9;
+int d4=6;
+int d5=5;
+int d6=4;
+int d7=3;
+
+LiquidCrystal lcd(rs,en,d4,d5,d6,d7);
+
+int button = 2;
+int buttonState;
+int oldState =1;
+int trigPin=11;
+int echoPin=12;
+int pingTime;
+int numMeas=100;
+float avMeas;
+float bucket;
+float pingDistance;
+float targetDistance;
+float distance;
+int counter = 0;
+
+
+void setup() {
+  pinMode(trigPin,OUTPUT);
+  pinMode(echoPin,INPUT);
+  lcd.begin(16,2);;
+  Serial.begin(9600);
+  pinMode(button,INPUT_PULLUP);
+
+}
+
+void loop() {
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Place the Target");
+  lcd.setCursor(0,1);
+  lcd.print("Press to Measure");
+  buttonState = digitalRead(button);
+  if(oldState==0&&buttonState==1){
+  for(int i=0;i&ltnumMeas;i++){
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Measuring...");
+ 
+  digitalWrite(trigPin,LOW);
+  delayMicroseconds(10);
+  digitalWrite(trigPin,HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin,LOW);
+  pingTime = pulseIn(echoPin,HIGH);//pulseIn reads how long a pin is in a state for
+  delay(10);
+  pingDistance = pingTime*(0.013464);
+  targetDistance = pingDistance/2.;
+  bucket = bucket+targetDistance;
+  }
+  avMeas = bucket/numMeas;
+ 
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Distance: ");
+  lcd.setCursor(0,1);
+  lcd.print(targetDistance);
+  lcd.print(" Inches");
+  delay(2500);
+  }
+  oldState=buttonState;
+ 
+ 
+  delay(100);
+ 
+}
+	</code></pre>
 	
 </div>
 

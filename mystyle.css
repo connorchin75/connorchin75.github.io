@@ -141,6 +141,16 @@ padding: 20px;
 
 #projectSection li{
     padding:10px 0px;
+    font-size:20px;
+}
+
+pre{
+    display: block;
+    width: 600px;
+    background-color:#efefef;
+    margin: 50px 80px;
+    padding:20px 50px;
+    
 
 }
 
