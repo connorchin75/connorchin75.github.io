@@ -200,7 +200,7 @@ pre{
     width:5%;
     height:5%;
     top: 50%;
-    left: 95%;
+    left:95%;
     font-size:1.1rem;
 
 }
@@ -312,14 +312,17 @@ pre{
     }
     
     .travelcontainer .leftbtn{
-    
+    height:10%;
+    width:10%;
     font-size:0.5rem;
     
 }
 
 .travelcontainer .rightbtn{
-    
+    height:10%;
+    width:10%;
     font-size:0.5rem;
+    left:90%;
 
 }
 
