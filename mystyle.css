@@ -241,6 +241,18 @@ pre{
     font-size:0.6rem;
     }
     
+    #projectSection img{
+    display:block;
+    max-width:100%;
+    height: auto;
+    margin-left:0;
+    margin-right:0;
+    padding:0;
+    border:none;
+    border-radius:20px;
+}
+
+    
     
 }
 
