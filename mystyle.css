@@ -136,8 +136,8 @@ padding: 20px;
  video{
     display: block;
     margin-left: 5%;
-    margin-top: 30px
-    border: 3px solid black;
+    margin-top: 30px;
+    border: 2px solid black;
     border-radius: 20px;
 }
 
@@ -159,8 +159,8 @@ pre{
     max-width: 80%;
     height: auto;
     margin-left: 3%;
-    border: none;
-    border-radius:20px
+    border: 2px solid black;
+    border-radius:20px;
 }
 
 #projectSection figcaption{
@@ -187,13 +187,12 @@ pre{
     
     .titlephoto{
         display:block;
-        
     }
     .titlephoto img{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10%;
-    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:20%;
+    width: 70%;
     border-radius:50%;        
     }
     .titlephoto h2{
@@ -248,9 +247,16 @@ pre{
     margin-left:0;
     margin-right:0;
     padding:0;
-    border:none;
+    border: 1px solid black;
     border-radius:20px;
 }
+
+    video{
+        margin-left: 15%;
+        margin-top: 10%;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
 
     
     
