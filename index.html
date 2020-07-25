@@ -25,65 +25,73 @@
 </div>
 
 <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="connor.jpg">
+
 	<h1 id="title">Connor Chin</h1>
 	
 </div>
-
+<div class="titlephoto">
+	<img src="connor2.jpg">
+	<h2>Connor Chin</h2>
+</div>
 <div id="aboutme">
-<h2 id="about">About</h2>
-<p>
-Hello! My name is Connor Chin and I am an Electrical Engineering student at the University of Alberta.
-</p>
-<p>
- I am part of the autonomous robotic vehicle project (ARVP). Aside from my school endeavors, I trail run, trail bike and play badminton.
-</p>
-</p>
+	<div class="container">
+		<h2 id="about">About</h2>
+		<p>
+		Hello! My name is Connor Chin and I am an Electrical Engineering student at the University of Alberta.
+		</p>
+		<p>
+		 I am part of the autonomous robotic vehicle project (ARVP). Aside from my school endeavors, I trail run, trail bike and play badminton.
+		</p>
+		</p>
+		</div>
 </div>
 
-
+<div class="container">
 <h2 id="skills">Skills</h2>
 
-<ul>
-	<li>Arduino</li>
-	<li>Java</li>
-	<li>Matlab</li>
-	<li>Solidworks</li>
-	<li>Microsoft Office Suite</li>
-	<li>HTML(5)/CSS(3)</li>
-</ul>
+	<ul>
+		<li>Arduino</li>
+		<li>Java</li>
+		<li>Matlab</li>
+		<li>Solidworks</li>
+		<li>Microsoft Office Suite</li>
+		<li>HTML(5)/CSS(3)</li>
+	</ul>
+</div>
 
 <div id="projectSection">
-<h2 id="projects">Projects</h2>
-	<h3>Arduino Distance Measurer -- 06/2020</h3>
-	<video width="60%" height="35%" controls>
-	<source src="distanceSensor.mp4" type="video/mp4">
-	</video>
-	<h3>Supplies</h3>
-	<ul>
-		<li>Arduino Uno</li>
-		<li>Power Supply Module</li>
-		<li>9 volt power supply</li>
-		<li>LCD1602</li>
-		<li>10k potentiometer</li>
-		<li>HC-SR04 Ultrasonic Sensor</li>
-		<li>Jumper Wires</li>
-	</ul>
+	<div class="container">
+		<h2 id="projects">Projects</h2>
+		<h3>Arduino Distance Measurer -- 06/2020</h3>
+		<video width="60%" height="35%" controls>
+		<source src="distanceSensor.mp4" type="video/mp4">
+		</video>
+		<h3>Supplies</h3>
+		<ul>
+			<li>Arduino Uno</li>
+			<li>Power Supply Module</li>
+			<li>9 volt power supply</li>
+			<li>LCD1602</li>
+			<li>10k potentiometer</li>
+			<li>HC-SR04 Ultrasonic Sensor</li>
+			<li>Jumper Wires</li>
+		</ul>
 	
 	
-	<h3>Description</h3>
-	<p>
-	This summer I decided to pick up an arduino kit with various components so that I could learn some basics about how microcontrollers can be applied to various scenarios. The distance measurer was a simple project that allowed me to test out some of the skills I had learned through various tutorials. 
-	</p>
-	<p>
-	Upon pressing a button, the HC-SR04 sensor sends out an ultrasonic signal that reflects off of a solid object. The echo-pin on the sensor is set to high until the signal returns at which point the pin switches to low and the arduino is able to record the signal travel time. By using basic a basic velocity calculation (assuming that the signal travels at the speed of sound), I am able to produce an accurate measure of the distance between the object and the sensor.
-	</p>
+		<h3>Description</h3>
+		<p>
+		This summer I decided to pick up an arduino kit with various components so that I could learn some basics about how microcontrollers can be applied to various scenarios. The distance measurer was a simple project that allowed me to test out some of the skills I had learned through various tutorials. 
+		</p>
+		<p>
+		Upon pressing a button, the HC-SR04 sensor sends out an ultrasonic signal that reflects off of a solid object. The echo-pin on the sensor is set to high until the signal returns at which point the pin switches to low and the arduino is able to record the signal travel time. By using basic a basic velocity calculation (assuming that the signal travels at the speed of sound), I am able to produce an accurate measure of the distance between the object and the sensor.
+		</p>
 
-	<p>
-	In order to make the assembly portable I connected up a power module that allowed me to use an input voltage supply of 9V and output a voltage of 5V that could be used by the arduino. I also used an LCD screen to display basic user instructions as well as the results of the measurements in inches. The wires were a bit messier than I would have liked but overall this project was a good starting point.
-	</p>
+		<p>
+		In order to make the assembly portable I connected up a power module that allowed me to use an input voltage supply of 9V and output a voltage of 5V that could be used by the arduino. I also used an LCD screen to display basic user instructions as well as the results of the measurements in inches. The wires were a bit messier than I would have liked but overall this project was a good starting point.
+		</p>
 	
 	
-	<pre><code>
+		<pre><code>
 	
 #include &ltLiquidCrystal.h&gt
 
@@ -138,7 +146,8 @@ void loop() {
   digitalWrite(trigPin,HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin,LOW);
-  pingTime = pulseIn(echoPin,HIGH);//pulseIn reads how long a pin is in a state for
+  pingTime = pulseIn(echoPin,HIGH);
+  //pulseIn reads how long a pin is in a state for
   delay(10);
   pingDistance = pingTime*(0.013464);
   targetDistance = pingDistance/2.;
@@ -180,8 +189,8 @@ void loop() {
 	After many iterations, we finally had a design that we wanted to pursue. This design featured a 3D printed body that housed the springs, and a single servo that controlled a latch swinging latch to hold both torpedoes in place. By rotating the servo 90 degrees in one direction, one torpedo would be released and rotating 90 degrees past center in the other direction would launch the second torpedo. Not only did I learn how to solid model, but I also obtained valuable experience about the engineering design process. One example being the idea that every design choice must be deliberate and able to be backed up with logical reasoning and calculations. To illustrate, one of my sub-team members ran a stress calculation on the front latch to figure out how thick we would need to make the latch to avoid deformation.
 	</p>
 	
+	</div>
 </div>
-
 
 
 
