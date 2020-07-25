@@ -148,7 +148,7 @@ padding: 20px;
 
 pre{
     display: block;
-    width: 70%;
+    width: 60%;
     background-color:#efefef;
     margin: 50px 80px;
     padding:20px 50px;
@@ -173,11 +173,16 @@ pre{
         margin: 0 auto;
         max-width: 100%;
     }
+    
+    h2{
+        font-size:2.2rem;
+    }
     #projectSection p{
-    text-align:left;
-    width: 85%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 90%;
     font-size:1rem;
-    margin:0;
+    
     }
     
     .titlephoto{
@@ -194,13 +199,46 @@ pre{
     .titlephoto h2{
     font-family: 'Merriweather', serif;
     font-weight: bold;
-    font-size: 2.0rem;
+    font-size: 2.4rem;
     margin-bottom:30%;
+    margin-top:30%;
+    }
+    h2{
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
     }
     
+    #projectSection h3{
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+    width:90%;
+    
+}
     
     .parallax{
         display:none;
+    }
+    #aboutme p{
+    margin-left:auto;
+    margin-right:auto;
+    width: 90%;
+    font-size:1rem;
+    padding:0;
+    
+    }
+    ul{
+        margin-left:20%;
+        padding:0;
+    }
+    pre{
+        margin-left:5%;
+        padding:1%;
+        width:90%
+    }
+    code{
+    font-size:0.6rem;
     }
     
     

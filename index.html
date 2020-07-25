@@ -90,7 +90,7 @@
 		In order to make the assembly portable I connected up a power module that allowed me to use an input voltage supply of 9V and output a voltage of 5V that could be used by the arduino. I also used an LCD screen to display basic user instructions as well as the results of the measurements in inches. The wires were a bit messier than I would have liked but overall this project was a good starting point.
 		</p>
 	
-	
+	<h3>Code</h3>
 		<pre><code>
 	
 #include &ltLiquidCrystal.h&gt
@@ -147,7 +147,8 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(trigPin,LOW);
   pingTime = pulseIn(echoPin,HIGH);
-  //pulseIn reads how long a pin is in a state for
+  //pulseIn reads how long a 
+  //pin is in a state for
   delay(10);
   pingDistance = pingTime*(0.013464);
   targetDistance = pingDistance/2.;
