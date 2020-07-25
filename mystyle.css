@@ -311,6 +311,11 @@ pre{
         border-radius: 20px;
     }
     
+    .travelcontainer{
+        width: 100%;
+        
+    }
+    
     .travelcontainer .leftbtn{
     height:10%;
     width:10%;
