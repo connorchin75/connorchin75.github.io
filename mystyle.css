@@ -168,6 +168,59 @@ pre{
     padding-top:10px;
 }
 
+
+
+.travelcontainer{
+    position: relative;
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+}
+
+.travelcontainer img {
+    width: 100%;
+    height: auto;
+    border-radius:20px;
+    
+}
+
+.travelcontainer .leftbtn{
+    position: absolute;
+    width:5%;
+    height:5%;
+    top: 50%;
+    left: 0%;
+    font-size:1.1rem;
+    
+}
+
+.travelcontainer .rightbtn{
+    position: absolute;
+    width:5%;
+    height:5%;
+    top: 50%;
+    left: 95%;
+    font-size:1.1rem;
+
+}
+
+.travelcontainer .rightbtn:hover{
+    background-color:#8c8c8c
+    
+
+}
+
+.travelcontainer .leftbtn:hover{
+    background-color:#8c8c8c;
+    
+
+}
+
+
+
+
+
 @media (max-device-width: 900px) {
     .container{
         margin: 0 auto;
@@ -257,6 +310,18 @@ pre{
         border: 1px solid black;
         border-radius: 20px;
     }
+    
+    .travelcontainer .leftbtn{
+    
+    font-size:0.5rem;
+    
+}
+
+.travelcontainer .rightbtn{
+    
+    font-size:0.5rem;
+
+}
 
     
     
