@@ -132,8 +132,15 @@ padding: 20px;
 
 }
 
+video{
+    display: block;
+    margin-left: 5%;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
 
- video{
+iframe{
     display: block;
     margin-left: 5%;
     margin-top: 30px;
@@ -163,12 +170,14 @@ pre{
     border-radius:20px;
 }
 
+#devpost{
+    margin-left: 80px;;
+}
+
 #projectSection figcaption{
     margin-left: 5%;
     padding-top:10px;
 }
-
-
 
 .travelcontainer{
     position: relative;

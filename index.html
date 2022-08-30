@@ -56,8 +56,9 @@
 		<li>Python</li>
 		<li>Java</li>
 		<li>Matlab</li>
+		<li>MicroStation</li>
 		<li>Solidworks</li>
-		<li>Microsoft Office Suite</li>
+		<li>JavaScript</li>
 		<li>HTML(5)/CSS(3)</li>
 	</ul>
 </div>
@@ -65,11 +66,28 @@
 <div id="projectSection">
 	<div class="container">
 		<h2 id="projects">Projects</h2>
-		<h3>Soft-Wearable Exoskeleton -- 07/2021</h3>
+		<h3>BCI Brightness Extension (natHACKS 2022) -- 08/2022</h3>
+		<iframe width="60%" height="450px" src="https://www.youtube.com/embed/kciKBQFJ7jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<h3>Project Overview</h3>
+		<p>
+		Over the August long weekend, I participated in natHACKS 2022 which was my first ever hackathon. This hackathon was focused on brain-computer interface (BCI) technology.
+		Our team developed a chromium browser extension that monitors a user's alertness using a Muse S brain wave device and adjusts screen brightness accordingly. 
+		</p>
+		<p>
+		Brain waves can be sorted into five different groups based on their signal frequency. Each frequency band corresponds to a certain brain state. The two frequencies that our group focused on were the alpha (8-13 Hz) and beta (13-32 Hz) bands.
+		The alpha band corresponds to a physically and mentally relaxed state whereas the beta band denotes an awake and alert state. By taking the ratio of the alpha to beta wave ratios that were present in a user's brain signals, we were able to determine the alertness of the wearer.
+		</p>
+		<p>
+		The Muse S device collects voltage readings over time. To analyze the alpha to beta band ratios we needed to apply a Fast Fourier Transform to the input signal.
+		From there we sorted the signals into the relevant frequency band bins and performed the calculations that would allow us to determine how alert the user was.
+		Once this information was obtained, the brightness of the browser tab would either increase or decrease (performed using HTML, JavaScript and CSS). Further details on our project as well as our GitHub repository can be found using the below DEVPOST link:
+		</p>
+		<a href="https://devpost.com/software/bci-brightness-extension" id="devpost">DEVPOST Submission</a>
+		<h3>Soft-Wearable Exoskeleton () -- 07/2021</h3>
 		<video width="60%" height="35%" controls>
 		<source src="exoskeleton.mp4" type="video/mp4">
 		</video>
-		<h3>Overview</h3>
+		<h3>Project Overview</h3>
 		<p>
 		During my first co-op work term, I had the opportunity to work in the Telerobotic and Biorobotic Systems Group. The focus of this team is the development
 		of robots and robotic systems for rehabilitative purposes. I was tasked with designing a control system for a Soft Wearable Exoskeleton that incorporated a user’s muscle signals.
